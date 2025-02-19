@@ -1,0 +1,22 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+GET http://localhost:7201/api/Rankings/get?id=1
+
+###
+post http://localhost:7201/api/Rankings/add
+{
+    "stage_id": 2,
+    "Time": 500
+ }
+
+###
+GET https://functionappge202405.azurewebsites.net/api/Rankings/get?id=2
+x-functions-key: A0db6gVnMsfxsVm-JJc94QsuiEAyFYvsC2KOANMCZ0WIAzFuoKvXNQ==
+
+###
+GET https://functionappge202405.azurewebsites.net/api/Rankings/add
+x-functions-key: A0db6gVnMsfxsVm-JJc94QsuiEAyFYvsC2KOANMCZ0WIAzFuoKvXNQ==
+{
+    "stage_id": 2,
+    "Time": 500
+ }

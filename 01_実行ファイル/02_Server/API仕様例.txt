@@ -1,0 +1,39 @@
+■■■■■■■■■■■■■■■■
+■ 2DアクションゲームAPI仕様  ■
+■■■■■■■■■■■■■■■■
+
+1. スコア登録API
+[概要]
+　クリアタイムを登録する。
+
+[URL]
+　https://functionappge202405.azurewebsites.net/api/Rankings/add
+
+[メソッド]
+　POST
+
+[リクエストパラメータ]
+　stage_id [int] ステージID
+　Time [int] クリアタイム
+
+
+2. ランキング取得API
+[概要]
+ 各ステージのクリアタイムをランキングで取得する。
+
+[URL]
+　https://functionappge202405.azurewebsites.net/api/Rankings/get
+
+[メソッド]
+　GET
+
+[リクエストパラメータ]
+　stage_id [string] ステージID
+
+[レスポンスサンプル]
+  {
+    "Rank": 1,
+    "stage_id": 2,
+    "Time": 500
+  }
+

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Function20241108": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7201",
+      "launchBrowser": false
+    }
+  }
+}
